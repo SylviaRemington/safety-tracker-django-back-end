@@ -5,8 +5,8 @@ Next up, I will be creating a front end to complete building my first Django API
 
 <hr>
 
-### Encountering errors of deployment with backend - Luke was troubleshooting with me today (10/26) for 1.5 hours. He will be looking over my repo to determine what else needs to be done to deploy. We will be having a support session for the entire class on Thursday.
-### **Update** 
+### Encountering errors of deployment with backend - Luke was troubleshooting with me today (10/26) for 1.5 hours. He will be looking over my repo to determine what else needs to be done to deploy. We will be having a support session for the entire class on Thursday 10/30.
+### **Update...** 
 - **I needed to delete all the heroku updates that we did to settings.py from my GitHub Repo so that my backend could function again and interact with my frontend for project week. Below is what I had to delete from my repo and local so that things would work again.**
 - **Deleted settings.py deleted static file to the top to reset. And I have taken screenshots of these commits prior to deleting. I have them on my local computer. (See Image Below From GitHub)**
 
