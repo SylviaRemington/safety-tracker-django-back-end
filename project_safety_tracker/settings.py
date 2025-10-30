@@ -11,6 +11,11 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
+import os
+import dj_database_url
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,12 +25,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-2aa#6$lin$rlsed&4jf!bhuc)($@4up^g#x(@)y&yj#1&dh^tm'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -98,14 +103,17 @@ WSGI_APPLICATION = 'project_safety_tracker.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 
-DATABASES = { # added this to use postgres as the database instead of the default sqlite. do this before running the initial migrations or you will need to do it again
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'safety-tracker-api',
-        'HOST': 'localhost',
-        'PORT': 5432
-    }
+DATABASES = {
+    "default": dj_database_url.config(
+        default="postgresql://localhost/safety-tracker-api",
+        conn_max_age=600,
+        conn_health_checks=True,
+        ssl_require=True if "ON_HEROKU" in os.environ else False,
+    )
 }
+
+if not 'ON_HEROKU' in os.environ:
+    DEBUG = True
 
 
 # Password validation
