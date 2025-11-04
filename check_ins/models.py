@@ -6,6 +6,7 @@ class Check_In(models.Model):
         return f'{self.title} - {self.category}'
     
     title = models.CharField(max_length=10000, unique=True)
+    day_type = models.CharField(max_length=1000, default="Not specified")  
     description = models.CharField(max_length=1000000)
     day_type = models.CharField(max_length=1000, default="Not specified")  
     relaxed_today = models.CharField(max_length=1000, default="Not specified") 
