@@ -22,8 +22,6 @@
 ## Logo
 <img width="611" height="572" alt="Screenshot 2025-10-18 at 4 59 50 AM" src="https://github.com/user-attachments/assets/52ff486f-75cb-4e9b-942f-fdda15bad912" /> <br>
 
-<br>
-
 ## Please see full README.md at: <br>
 Front End Github Repo: https://github.com/SylviaRemington/safety-tracker-react-front-end <br>
 
