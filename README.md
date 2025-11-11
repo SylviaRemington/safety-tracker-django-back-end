@@ -1,7 +1,7 @@
 # Safety Tracker Django Back End API
 **I've created a Django/Python API using Django Rest Framework (DRF), with 5 data entities (users, stories, authors, comments, check-ins, and more for stretch targets) which exposes its endpoints so it can be consumed from any front end application (like react.js).**
 
-**I am in the process of creating a front end to complete building my first Django API & React Frontend full stack application! Currently, in progress...Basic CRUD functionality done; however, adding enhancements and new features currently.**
+**I am in the process of updating the front end code to complete building my first Django API & React Frontend full stack application! Currently, in progress...Basic CRUD functionality done; however, adding enhancements and new features currently. In addition, I am updating the code to work out functionality in the "check_ins" section & to create a better user experience.**
 
 <hr>
 
