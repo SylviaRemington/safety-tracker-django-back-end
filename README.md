@@ -25,6 +25,7 @@
 ## Please see full README.md at: <br>
 Front End Github Repo: https://github.com/SylviaRemington/safety-tracker-react-front-end <br>
 
+<br>
 
 <hr>
 
