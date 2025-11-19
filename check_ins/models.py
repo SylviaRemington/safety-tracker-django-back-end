@@ -19,3 +19,8 @@ class Check_In(models.Model):
         related_name="check_ins",
         on_delete=models.CASCADE
     )
+
+
+
+
+
