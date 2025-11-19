@@ -1,7 +1,7 @@
 # Safety Tracker Django Back End API
 **I've created a Django/Python API using Django Rest Framework (DRF), with 5 data entities (users, stories, authors, comments, check-ins, and more for stretch targets) which exposes its endpoints so it can be consumed from any front end application (like react.js).**
 
-**I am in the process of updating the front end code to complete building my first Django API & React Frontend full stack application! Currently, in progress...Basic CRUD functionality done; however, adding enhancements and new features currently. In addition, I am updating the code to work out functionality in the "check_ins" section & to create a better user experience.**
+**I am in the process of updating the front-end code to create building my first Django-API-React-Frontend full-stack application! Currently, in progress...Basic CRUD functionality done. Also, adding enhancements and new features currently. In addition, I am updating the code to work out better functionality in the "check_ins" section, to create a better user experience.**
 
 <hr>
 
@@ -29,6 +29,8 @@ Front End Github Repo: https://github.com/SylviaRemington/safety-tracker-react-f
 
 <hr>
 
+<br>
+
 ## Ahas / Additional Awareness
 - **Deleting A Commit** - Learned how to delete a commit via (1) Looking up the commit number in git log, (2) Making sure it was the correct commit with git checkout a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0, (3) Going back into the main branch where my repo and commit were located, (4) Doing a hard reset to completely delete the commit (since that is where all the problems were arising) with git reset --hard HEAD~1, (5) Pushing this change through via git push origin main --force. Grateful to have learned this. There is also the ability to do a "soft" reset as well. Since I am working solo on this project, I double checked everything and then proceeded. If I were in a team, my actions would have taken into account other team members and I wouldn't have done it this way. <br><br> **Where the mistake occurred & how I corrected it:** After registering the author model, I created a foreign key and migrated it without deleting the database ahead of time & that messed all the functionality up. I tried to fix it on my own; however, best scenario after attempting this for a while was to delete the foreign key commit and go back to where I was before that. That occurred on October 16th 2025, right after I registered the author model. After that, I went through postman and all functionality to make sure it was working again before I proceeded forward (thus all the notes after that to check on functionality). <br>
 
@@ -40,5 +42,6 @@ Front End Github Repo: https://github.com/SylviaRemington/safety-tracker-react-f
 
 - **Order of Installed Apps** - Researched this and learned that the common Django best practices for INSTALLED_APPS order is: **(1)Django built-in apps** first, **(2)then third party apps** like **corsheaders** & **rest_framework**, and **(3)then custom apps** go last to avoid overriding Django's defaults.
 
+<br>
 
-
+<hr>
