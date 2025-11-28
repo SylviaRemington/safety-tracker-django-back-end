@@ -42,7 +42,7 @@ Front End Github Repo: https://github.com/SylviaRemington/safety-tracker-react-f
 - **Order of Installed Apps** - Researched this and learned that the common Django best practices for INSTALLED_APPS order is: **(1)Django built-in apps** first, **(2)then third party apps** like **corsheaders** & **rest_framework**, and **(3)then custom apps** go last to avoid overriding Django's defaults.
 
 <br>
-
+<br>
 
 <hr>
 
